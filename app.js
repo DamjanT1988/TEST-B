@@ -4,7 +4,7 @@ import { Html, useGLTFLoader } from '@react-three/drei'
 import '@google/model-viewer'
 
 const Model = () => {
-  const gltf = useGLTFLoader('/models/chair/scene.gltf', true)
+  const gltf = useGLTFLoader('scene.gltf', true)
   
   return <primitive object={gltf.scene} scale={0.02} />
 }
